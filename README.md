@@ -35,14 +35,14 @@ database.default.DBDriver = MySQLi
 
 5. buka folder "db_manajemen_gudang" dan import file "db_gudang.sql" di phpmyadmin atau Buka aplikasi database manager(phpmyadmin), lalu buat database baru dengan nama: "db_gudang"
 
-5. Jalankan Migrasi Database
+6. Jalankan Migrasi Database
 Jalankan perintah:
 ```bash
 php spark migrate
 ```
 Perintah ini akan otomatis membuat tabel items beserta kolom-kolomnya.
 
-6. Jalankan Aplikasi
+7. Jalankan Aplikasi
 Jalankan local development server:
 ```bash
 php spark serve
@@ -51,7 +51,8 @@ Akses aplikasi melalui browser di alamat: http://localhost:8080
 
 ## 📌 Informasi Dasar
 
-- **Base URL (Local):** `http://localhost:8080/api`
+- **Production (Live):** `http://manajemengudang.kesug.com/api`(opsi 1)
+- **Base URL (Local):** `http://localhost:8080/api`(opsi 2)
 - **Format Request:** JSON
 - **Format Response:** JSON
 
